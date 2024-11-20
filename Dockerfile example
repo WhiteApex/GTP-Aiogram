@@ -1,8 +1,8 @@
 # Используем официальный образ Python как базовый
 FROM python:3.12-slim
-ENV TOKEN1=7307830513:AAHYUTzotlQyhmw48GkObKzxx4M6COsNOHs
+ENV TOKEN1=ВАШ_ТОКЕН_БОТА
 
-ENV API=s0eAgctwYqKt2DiQWu74bW21Jca1psxf
+ENV API=ВАШ_КЛЮЧ_АПИ_MISTRAL
 COPY . /app
 # Устанавливаем рабочую директорию
 WORKDIR /app
