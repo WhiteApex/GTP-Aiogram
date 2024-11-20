@@ -1,0 +1,19 @@
+# Используем официальный образ Python как базовый
+FROM python:3.12-slim
+ENV TOKEN1=7307830513:AAHYUTzotlQyhmw48GkObKzxx4M6COsNOHs
+
+ENV API=s0eAgctwYqKt2DiQWu74bW21Jca1psxf
+COPY . /app
+# Устанавливаем рабочую директорию
+WORKDIR /app
+
+# Копируем файлы проекта в контейнер
+
+
+# Устанавливаем зависимости
+RUN pip install --no-cache-dir -r requirements.txt
+COPY . /app
+
+
+# Указываем команду для запуска supervisord
+CMD ["python", "bot1.py"]
